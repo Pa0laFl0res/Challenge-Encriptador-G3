@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initiale scale=1.0">
+    <link rel="stylesheet" href="./components/encriptadorStyle.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img src="./components/imagenes/Logo.png" alt="logoAlura">
+    </header>
+    <main><!--sección izq-->
+        <section class="left-section">
+            <textarea class="encryptText" placeholder="Ingrese el texto aquí ..." required autocomplete="off" onkeypress="return (event.charCode >= 97 && event.charCode <= 122)" min="1"></textarea>
+            <div class="warning">
+                <p id="warn-text">&#9888; No acentos, no símbolos, no mayúsculas</p>
+            </div>
+            <div class="btn-container">
+                <input type="button" class="btn-encrypt" value="Encriptar" onclick="btnEncrypt()">
+                <input type="button" class="btn-desencrypt" value="Desencriptar" onclick="btnDesencrypt()">
+            </div>
+        </section>
+        <section class="right-section"><!--sección derecha-->
+            <div>
+            <textarea class="message"></textarea>
+            </div>
+
+            <div id="notFound" class="notFound">
+                <h3  class="container-h3"><strong>Ningún texto mensaje fue encontrado</strong></h3>
+                <p class="container-p">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div class="container-copy">
+            <button class="btnCopy" onclick="btnCopy()">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="footer">&copy Copyright WirdoNerdy - 2022</p>
+    </footer>
+    <script src="./components/encriptador.js">
+    </script>
+</body>
+</html>
+
+
+<!--::before "solo letras minusculas sin acentos"-->
+

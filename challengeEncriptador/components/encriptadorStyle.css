@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+header{
+    display: flex;
+    margin: 20px;
+    width: 60%;
+    height: auto;
+    margin-top: 4em;
+    margin-left: 4em;
+    margin-right: 0;
+    
+}
+
+main{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+section{
+    width: 40%;
+    height: 100%;
+}
+
+.left-section{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 40em;
+    margin-right: 1em;
+}
+
+.encryptText{
+    width: 80%;
+    height: 70%;
+    /*display: block;*/
+    margin: auto;
+    margin-top: 70px;
+    resize:none;
+    font-size: 25px;
+    border: none;
+    background-color: #F5F5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
+
+@media only screen and (max-width: 400px){
+.encryptText{
+    font-size: 100%;
+    margin: 0;
+    margin-top: 10%;
+    width: 100%;
+}
+}
+
+.encryptText::placeholder{
+    color:#0A3871
+}
+
+#warn-text{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 25em;
+    color: #1d0e5b;
+    text-align: center;
+}
+
+.btn-encrypt, .btn-desencrypt{
+    width: 30%;
+    height: 4em;
+    background-color: #D8DFE8;
+    stroke:#0A3871;
+    border-radius: 2em;
+    margin: 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-encrypt:hover, .btn-desencrypt:hover{
+    background: #0A3871;
+    color: #FFFFFF;
+    font-size:18px;
+    width: 31%;
+    height: 4.2em;
+}
+
+.btn-container{
+    text-align: center;
+    margin-top: 30px;
+    
+}
+
+/*right section*/
+
+.right-section{
+    width: 25%;
+    background-color: #ffffff;
+    border-radius: 2em;
+    box-shadow:0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    margin-right: 3em;
+    height: 45em;
+
+}
+
+.right-section:hover{
+    box-shadow:0px 24px 32px -8px rgba(138, 202, 255, 0.386);
+
+}
+/**/
+.message{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 20px;
+    background-image: url("./imagenes/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+    border: none;
+    height: 20em;
+    width: 90%;
+    text-align: center;
+    text-overflow: initial;
+    font-size: 20px;
+    resize: none;
+    outline: none;
+}
+
+.container-h3{
+    margin: 0 0 1em;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0A3871;
+    font-size: 25px;
+    
+}
+
+.container-p{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0A3871;
+    font-size: 20px;
+    margin: 20px 0 25px;
+    font-size: 18px;
+}
+
+
+
+
+.container-copy{
+    width:100%;
+    height: 20%;
+}
+
+.btnCopy{
+    width: 35%;
+    height: 40%;
+    background-color: #ceddf0;
+    stroke:#336db4;
+    border-radius: 2em;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    font-size: 15px;
+    
+}
+
+.btnCopy:hover{
+    background-color: #290a71;
+    font-size: 18px;
+    color: #FFFFFF;
+
+}
+
+
+/*footer*/
+
+footer{
+    width: 100%;
+    height: 5em;
+    /*background: #103461;*/
+}
+
+.footer{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #000000;
+}
