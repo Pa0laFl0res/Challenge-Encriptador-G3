@@ -1,5 +1,5 @@
 # Challenge-Encriptador-G3
-Challenge #1 Encriptador - ProgramaONE
+Challenge #1 Encryptor - ProgramaONE
 
 Visita [Encriptador Alura by me](https://pa0lafl0res.github.io/Challenge-Encriptador-G3/challengeEncriptador/encriptador.html)
 
